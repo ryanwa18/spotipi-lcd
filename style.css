@@ -1,33 +1,39 @@
+.art {
+  border-radius: 20px; 
+  height: 250px; 
+  width: 250px;
+}
+
 .plus-jakarta-sans-circular {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: white;
 }
 
-.item1 { grid-area: cover-art; align-self: center; z-index: 2; }
-.item2 { grid-area: title; }
-.item3 { grid-area: album; align-self: center; z-index: 2; }
-.item4 { grid-area: artist; }
+.item1 { grid-area: cover-art; align-self: center; z-index: 2; text-align: right; }
+.item2 { grid-area: title; align-self: center; z-index: 2; }
+.item3 { grid-area: playback; }
 
 .grid-container {
     display: grid;
     grid-template-areas: 
       'cover-art title'
-      'cover-art album'
-      'cover-art artist';
+      'cover-art title'
+      'playback  playback';
     gap: 20px;
     height: 480px;
     width: 800px;
     margin: 20px;
     position: absolute;
-    top: 24%;
-    left: 21%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .bg-image {
-  filter: blur(10px);
+  filter: blur(10px) brightness(50%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
