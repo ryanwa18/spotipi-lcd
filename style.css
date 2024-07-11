@@ -1,0 +1,38 @@
+.plus-jakarta-sans-circular {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.item1 { grid-area: cover-art; align-self: center; z-index: 2; }
+.item2 { grid-area: title; }
+.item3 { grid-area: album; align-self: center; z-index: 2; }
+.item4 { grid-area: artist; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+      'cover-art title'
+      'cover-art album'
+      'cover-art artist';
+    gap: 20px;
+    height: 480px;
+    width: 800px;
+    margin: 20px;
+    position: absolute;
+    top: 24%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-image {
+  filter: blur(10px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 480px;
+  width: 800px;
+  background-image: url("https://i.scdn.co/image/ab67616d00001e021c58a541c0a73c0aad5b9f36");
+}
+  
