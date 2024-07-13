@@ -19,7 +19,7 @@ i {
 }
 
 .item1 { grid-area: cover-art; align-self: center; z-index: 2; text-align: right; }
-.item2 { grid-area: title; align-self: center; z-index: 2; }
+.item2 { grid-area: title; align-self: center; z-index: 2; max-width: 300px;}
 .item3 { grid-area: playback; text-align: center;}
 
 .grid-container {
@@ -44,6 +44,5 @@ i {
   background-size: cover;
   height: 480px;
   width: 800px;
-  background-image: url("https://i.scdn.co/image/ab67616d00001e021c58a541c0a73c0aad5b9f36");
 }
   
